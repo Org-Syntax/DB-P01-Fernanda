@@ -1,0 +1,5 @@
+*                       @Org-Syntax/scrummaster-sm @Org-Syntax/codeowners-cw
+/src/                   @Org-Syntax/scrummaster-sm @Org-Syntax/codeowners-cw
+/docs/                  @Org-Syntax/scrummaster-sm @Org-Syntax/codeowners-cw
+/.github/               @Org-Syntax/codeowners-cw
+/docs/rubrica-evaluacion.md @Org-Syntax/codeowners-cw
