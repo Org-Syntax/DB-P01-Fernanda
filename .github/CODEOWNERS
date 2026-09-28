@@ -1,5 +1,5 @@
-*                           @Org-Syntax/sm-po1-jhamilton @Org-Syntax/scrummaster-sm
-/src/                       @Org-Syntax/sm-po1-jhamilton @Org-Syntax/scrummaster-sm
-/docs/                      @Org-Syntax/sm-po1-jhamilton @Org-Syntax/scrummaster-sm
-/.github/                   @Org-Syntax/scrummaster-sm
-/docs/rubrica-evaluacion.md @Org-Syntax/scrummaster-sm
+*                       @Org-Syntax/scrummaster-sm @Org-Syntax/codeowners-cw
+/src/                   @Org-Syntax/scrummaster-sm @Org-Syntax/codeowners-cw
+/docs/                  @Org-Syntax/scrummaster-sm @Org-Syntax/codeowners-cw
+/.github/               @Org-Syntax/codeowners-cw
+/docs/rubrica-evaluacion.md @Org-Syntax/codeowners-cw
