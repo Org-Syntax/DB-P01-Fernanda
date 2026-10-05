@@ -24,7 +24,7 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-    - name: Ejecutar validaciones o pruebas
+    - name: 🔍 Verificar proyecto con Django Check
       run: |
-        echo "Ejecutando pruebas del backend de la organización..."
-        # Aquí puedes agregar comandos como pytest o npm test
+        python -m pip install django
+        python manage.py check
