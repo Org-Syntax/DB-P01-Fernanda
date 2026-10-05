@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Suma rápida</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f3f6f1;
+      --ink: #173a33;
+      --muted: #64756d;
+      --line: #cbd6ce;
+      --accent: #cf4e35;
+      --accent-hover: #ae3c29;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Trebuchet MS", sans-serif;
+    }
+
+    main {
+      width: min(100% - 40px, 680px);
+      margin: 0 auto;
+      padding: 56px 0 72px;
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: Georgia, serif;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 1.12;
+    }
+
+    .calculator {
+      margin-top: 34px;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-top: 4px solid var(--ink);
+      background: var(--white);
+    }
+
+    .fields {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    input {
+      width: 100%;
+      min-height: 54px;
+      padding: 0 14px;
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      background: var(--white);
+      color: var(--ink);
+      font: inherit;
+      font-size: 18px;
+    }
+
+    input:focus-visible,
+    button:focus-visible {
+      outline: 3px solid #e5a08f;
+      outline-offset: 3px;
+    }
+
+    button {
+      min-height: 50px;
+      margin-top: 22px;
+      padding: 0 22px;
+      border: 0;
+      border-radius: 3px;
+      background: var(--accent);
+      color: var(--white);
+      cursor: pointer;
+      font: inherit;
+      font-weight: 700;
+    }
+
+    button:hover {
+      background: var(--accent-hover);
+    }
+
+    .answer {
+      display: flex;
+      min-height: 104px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+    }
+
+    .answer-label {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    output {
+      overflow-wrap: anywhere;
+      color: var(--ink);
+      font-family: Georgia, serif;
+      font-size: 40px;
+      line-height: 1.1;
+      text-align: right;
+    }
+
+    @media (max-width: 520px) {
+      main {
+        width: min(100% - 28px, 420px);
+        padding-top: 36px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      .calculator {
+        padding: 20px;
+      }
+
+      .fields {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Herramienta de cálculo</p>
+    <h1>Suma rápida</h1>
+
+    <form class="calculator" id="sum-form">
+      <div class="fields">
+        <div>
+          <label for="first-number">Primer número</label>
+          <input id="first-number" name="first-number" type="number" step="any" required>
+        </div>
+        <div>
+          <label for="second-number">Segundo número</label>
+          <input id="second-number" name="second-number" type="number" step="any" required>
+        </div>
+      </div>
+
+      <button type="submit">Sumar</button>
+
+      <div class="answer">
+        <p class="answer-label">Resultado</p>
+        <output id="sum-result" for="first-number second-number" aria-live="polite">—</output>
+      </div>
+    </form>
+  </main>
+
+  <script>
+    const form = document.querySelector("#sum-form");
+    const firstNumber = document.querySelector("#first-number");
+    const secondNumber = document.querySelector("#second-number");
+    const result = document.querySelector("#sum-result");
+    const numberFormat = new Intl.NumberFormat("es-ES", { maximumFractionDigits: 10 });
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      result.value = numberFormat.format(firstNumber.valueAsNumber + secondNumber.valueAsNumber);
+    });
+  </script>
+</body>
+</html>
