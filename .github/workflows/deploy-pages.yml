@@ -2,8 +2,6 @@ name: Desplegar página web
 
 on:
   push:
-    branches:
-      - main
   workflow_dispatch:
 
 permissions:
@@ -28,8 +26,6 @@ jobs:
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - name: Preparar archivos de la página
         uses: actions/upload-pages-artifact@v3
