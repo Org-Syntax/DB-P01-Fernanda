@@ -86,7 +86,17 @@
       "command": "git remote set-url origin https://github.com/Org-Syntax/DB-P01-Fernanda.git\ngit remote -v",
       "timestamp": 1791303384103,
       "cwd": "c:\\INICIOPYTHON\\Clases PYTHON\\Clases RIDER\\github\\DB-P01-Fernanda-prueba"
+    },
+    {
+      "command": "git add .\ngit commit -m \"Agregar workflow y página de suma\"\ngit push origin HEAD",
+      "timestamp": 1791303408304,
+      "cwd": "c:\\INICIOPYTHON\\Clases PYTHON\\Clases RIDER\\github\\DB-P01-Fernanda-prueba"
+    },
+    {
+      "command": "git remote -v\ngit remote set-url origin https://github.com/Org-Syntax/DB-P01-Fernanda.git\ngit remote -v",
+      "timestamp": 1791303492961,
+      "cwd": "c:\\INICIOPYTHON\\Clases PYTHON\\Clases RIDER\\github\\DB-P01-Fernanda-prueba"
     }
   ],
-  "lastUpdated": 1791303384104
+  "lastUpdated": 1791303492961
 }
