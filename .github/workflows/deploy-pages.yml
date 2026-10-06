@@ -2,6 +2,7 @@ name: Desplegar página web
 
 on:
   push:
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -30,7 +31,7 @@ jobs:
       - name: Preparar archivos de la página
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./web
+          path: '.'
 
       - name: Publicar página
         id: deployment
