@@ -31,7 +31,7 @@ jobs:
       - name: Preparar archivos de la página
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: './web'
 
       - name: Publicar página
         id: deployment
