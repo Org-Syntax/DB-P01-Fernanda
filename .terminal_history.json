@@ -51,7 +51,42 @@
       "command": "git push origin feature/configuración-estructura",
       "timestamp": 1791302437283,
       "cwd": "c:\\INICIOPYTHON\\Clases PYTHON\\Clases RIDER\\github\\DB-P01-Fernanda-prueba"
+    },
+    {
+      "command": "git add .",
+      "timestamp": 1791302880457,
+      "cwd": "c:\\INICIOPYTHON\\Clases PYTHON\\Clases RIDER\\github\\DB-P01-Fernanda-prueba"
+    },
+    {
+      "command": "git commit -m \"Agregar workflow y página de suma\"",
+      "timestamp": 1791302962193,
+      "cwd": "c:\\INICIOPYTHON\\Clases PYTHON\\Clases RIDER\\github\\DB-P01-Fernanda-prueba"
+    },
+    {
+      "command": "git push origin feature/configuración-estructura",
+      "timestamp": 1791303075518,
+      "cwd": "c:\\INICIOPYTHON\\Clases PYTHON\\Clases RIDER\\github\\DB-P01-Fernanda-prueba"
+    },
+    {
+      "command": "git remote -v",
+      "timestamp": 1791303243766,
+      "cwd": "c:\\INICIOPYTHON\\Clases PYTHON\\Clases RIDER\\github\\DB-P01-Fernanda-prueba"
+    },
+    {
+      "command": "https://github.com/Org-Syntax/DB-P01-Fernanda",
+      "timestamp": 1791303282228,
+      "cwd": "c:\\INICIOPYTHON\\Clases PYTHON\\Clases RIDER\\github\\DB-P01-Fernanda-prueba"
+    },
+    {
+      "command": "git commit -m \"Agregar workflow y página de suma\"\ngit push origin HEAD",
+      "timestamp": 1791303344520,
+      "cwd": "c:\\INICIOPYTHON\\Clases PYTHON\\Clases RIDER\\github\\DB-P01-Fernanda-prueba"
+    },
+    {
+      "command": "git remote set-url origin https://github.com/Org-Syntax/DB-P01-Fernanda.git\ngit remote -v",
+      "timestamp": 1791303384103,
+      "cwd": "c:\\INICIOPYTHON\\Clases PYTHON\\Clases RIDER\\github\\DB-P01-Fernanda-prueba"
     }
   ],
-  "lastUpdated": 1791302437283
+  "lastUpdated": 1791303384104
 }
