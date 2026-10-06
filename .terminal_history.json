@@ -26,7 +26,32 @@
       "command": "& \"C:\\Users\\juanf\\AppData\\Local\\Temp\\wshist_aqquck.ps1\"; Remove-Item \"C:\\Users\\juanf\\AppData\\Local\\Temp\\wshist_aqquck.ps1\" -ErrorAction SilentlyContinue",
       "timestamp": 1791302318542,
       "cwd": "c:\\INICIOPYTHON\\Clases PYTHON\\Clases RIDER\\github\\DB-P01-Fernanda-prueba"
+    },
+    {
+      "command": "git add .",
+      "timestamp": 1791302321279,
+      "cwd": "c:\\INICIOPYTHON\\Clases PYTHON\\Clases RIDER\\github\\DB-P01-Fernanda-prueba"
+    },
+    {
+      "command": "git commit -m \"Agregar script y workflow de suma\"",
+      "timestamp": 1791302367342,
+      "cwd": "c:\\INICIOPYTHON\\Clases PYTHON\\Clases RIDER\\github\\DB-P01-Fernanda-prueba"
+    },
+    {
+      "command": "git push origin main",
+      "timestamp": 1791302389078,
+      "cwd": "c:\\INICIOPYTHON\\Clases PYTHON\\Clases RIDER\\github\\DB-P01-Fernanda-prueba"
+    },
+    {
+      "command": "git branch",
+      "timestamp": 1791302409148,
+      "cwd": "c:\\INICIOPYTHON\\Clases PYTHON\\Clases RIDER\\github\\DB-P01-Fernanda-prueba"
+    },
+    {
+      "command": "git push origin feature/configuración-estructura",
+      "timestamp": 1791302437283,
+      "cwd": "c:\\INICIOPYTHON\\Clases PYTHON\\Clases RIDER\\github\\DB-P01-Fernanda-prueba"
     }
   ],
-  "lastUpdated": 1791302318542
+  "lastUpdated": 1791302437283
 }

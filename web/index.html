@@ -1,48 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Suma rápida</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 320px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #resultado {
+      margin-top: 15px;
+      text-align: center;
+      font-weight: bold;
+      color: #111827;
+    }
+  </style>
 </head>
 <body>
-  <main>
-    <p class="eyebrow">Herramienta de cálculo</p>
-    <h1>Suma rápida</h1>
-
-    <form class="calculator" id="sum-form">
-      <div class="fields">
-        <div>
-          <label for="first-number">Primer número</label>
-          <input id="first-number" name="first-number" type="number" step="any" required>
-        </div>
-        <div>
-          <label for="second-number">Segundo número</label>
-          <input id="second-number" name="second-number" type="number" step="any" required>
-        </div>
-      </div>
-
-      <button type="submit">Sumar</button>
-
-      <div class="answer">
-        <p class="answer-label">Resultado</p>
-        <output id="sum-result" for="first-number second-number" aria-live="polite">—</output>
-      </div>
-    </form>
-  </main>
+  <div class="card">
+    <h2>Sumar</h2>
+    <input id="num1" type="number" placeholder="Número 1" />
+    <input id="num2" type="number" placeholder="Número 2" />
+    <button onclick="sumar()">Sumar</button>
+    <div id="resultado">Resultado: </div>
+  </div>
 
   <script>
-    const form = document.querySelector("#sum-form");
-    const firstNumber = document.querySelector("#first-number");
-    const secondNumber = document.querySelector("#second-number");
-    const result = document.querySelector("#sum-result");
-    const numberFormat = new Intl.NumberFormat("es-ES", { maximumFractionDigits: 10 });
-
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-      result.value = numberFormat.format(firstNumber.valueAsNumber + secondNumber.valueAsNumber);
-    });
+    function sumar() {
+      const a = Number(document.getElementById("num1").value);
+      const b = Number(document.getElementById("num2").value);
+      const resultado = a + b;
+      document.getElementById("resultado").textContent = "Resultado: " + resultado;
+    }
   </script>
 </body>
 </html>
