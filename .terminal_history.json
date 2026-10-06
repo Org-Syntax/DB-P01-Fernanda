@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "workspacePath": "c:\\INICIOPYTHON\\Clases PYTHON\\Clases RIDER\\github\\DB-P01-Fernanda-prueba",
+  "entries": [
+    {
+      "command": "[200~python -m unittest discover -s tests -v~",
+      "timestamp": 1791300860513,
+      "cwd": "c:\\INICIOPYTHON\\Clases PYTHON\\Clases RIDER\\github\\DB-P01-Fernanda-prueba"
+    },
+    {
+      "command": "python -m unittest discover -s tests -v",
+      "timestamp": 1791300902097,
+      "cwd": "c:\\INICIOPYTHON\\Clases PYTHON\\Clases RIDER\\github\\DB-P01-Fernanda-prueba"
+    },
+    {
+      "command": "cmd.exe /c start \"\" \"$(cygpath -w web/index.html)\"",
+      "timestamp": 1791301087855,
+      "cwd": "c:\\INICIOPYTHON\\Clases PYTHON\\Clases RIDER\\github\\DB-P01-Fernanda-prueba"
+    },
+    {
+      "command": "{ source \"C:/Users/juanf/AppData/Local/Temp/wshist_br07c4r.sh\" && rm \"C:/Users/juanf/AppData/Local/Temp/wshist_br07c4r.sh\"; } 2>/dev/null",
+      "timestamp": 1791301106019,
+      "cwd": "c:\\INICIOPYTHON\\Clases PYTHON\\Clases RIDER\\github\\DB-P01-Fernanda-prueba"
+    },
+    {
+      "command": "& \"C:\\Users\\juanf\\AppData\\Local\\Temp\\wshist_aqquck.ps1\"; Remove-Item \"C:\\Users\\juanf\\AppData\\Local\\Temp\\wshist_aqquck.ps1\" -ErrorAction SilentlyContinue",
+      "timestamp": 1791302318542,
+      "cwd": "c:\\INICIOPYTHON\\Clases PYTHON\\Clases RIDER\\github\\DB-P01-Fernanda-prueba"
+    }
+  ],
+  "lastUpdated": 1791302318542
+}
